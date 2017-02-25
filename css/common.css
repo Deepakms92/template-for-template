@@ -8,12 +8,11 @@ html{
 	color: #fff;
 
 }
-.nav{
+nav.ul{
 
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.nav ul{
-	display: inline-block;
+	 margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+
 }
