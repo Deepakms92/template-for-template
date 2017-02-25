@@ -7,7 +7,7 @@ layout: default
 {% for about in site.posts %}
 	<li>
 		<a href="">{{ about.title }}</a>
-		<p></p>
+		<p>{{about.meta}}</p>
 	</li>
 	{% endfor %}
 </ul>
