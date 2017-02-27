@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% for image in site.static_files %}
+    {% if image.path contains 'galleryimages' %}
+
+   <div class="gallery-img">
+	<a href="{{ site.baseurl }}{{ image.path }}" data-toggle="lightbox">
+	<img class="img-rounded" src="{{ site.baseurl }}{{ image.path }}" alt="image" width="300" height="200"/>
+	</a>
+   </div>
+
+{% endif %}
+   
+{% endfor %}

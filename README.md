@@ -1,2 +1,4 @@
-# template-for-template
-A small website for the temple nearby my home
+# Dharmasthana
+Dharmasthana.in
+
+http://dharmasthana.in/
