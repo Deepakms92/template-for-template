@@ -14,7 +14,7 @@ logo: "/assets/images/murthy1.JPG"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: "/assets/images/murthy.jpg"
+cover: "/assets/images/murthy.JPG"
 
 name: 'Dirk Fabisch'
 author: 'Dirk Fabisch'
