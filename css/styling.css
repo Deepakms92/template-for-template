@@ -1,6 +1,6 @@
 a.blog-logo{
     -webkit-transform: rotate(-90deg);
 }
-h1.blog-title{
+div.teaserimage{
   -webkit-transform: rotate(+90deg);  
 }
