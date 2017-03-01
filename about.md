@@ -2,7 +2,8 @@
 layout: page
 title: About
 permalink: /about/
-locations: VishnuMurthy Temple,Mallampalli, Doddanagudde, Udupi, Karnataka
+coordinates: -73.7236504,43.2294791
+locations: Moreau Lake State Park
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
