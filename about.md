@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+locations: VishnuMurthy Temple,Mallampalli, Doddanagudde, Udupi, Karnataka
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
