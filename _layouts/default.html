@@ -16,6 +16,12 @@
     </div>
 
     <!-- content end -->
+      
+    <div>
+      {% if site.url=='/about' %}
+         {% include map.html %}
+        {% endif %}
+      </div>
 
     {% include footer.html %}
     {% include javascripts.html %}
