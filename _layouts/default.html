@@ -17,11 +17,15 @@
 
     <!-- content end -->
       
-    <div>
+    
       {% if site.url=='/about' %}
+      <div class="page-content">
+          <div class="wrapper">
          {% include map.html %}
+          </div>
+          </div>
         {% endif %}
-      </div>
+      
 
     {% include footer.html %}
     {% include javascripts.html %}
