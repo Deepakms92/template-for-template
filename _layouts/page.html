@@ -40,11 +40,12 @@
         <section class="post-content">
           <a name="topofpage"></a>
           {{content}} 
-        {% include jekyll_mapping.html %}
-        {% render_map 500,500 %}
+       
         </section>
       </article>
     </main>
+       {% include jekyll_mapping.html %}
+        {% render_map 500,500 %}
     <div class="bottom-closer">
       <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
         Image
