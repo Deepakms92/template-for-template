@@ -2,6 +2,9 @@
 layout: page
 title: About
 permalink: /about/
+mapping:
+latitude: 51.101
+longitude: 0.1
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
