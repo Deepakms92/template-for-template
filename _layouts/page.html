@@ -44,8 +44,11 @@
         </section>
       </article>
     </main>
+      <div>
        {% include jekyll_mapping.html %}
          {% render_map %}
+          
+    </div>
     <div class="bottom-closer">
       <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
         Image
