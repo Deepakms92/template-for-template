@@ -58,12 +58,17 @@ social:
     
     
     # API settings
-google_api_key: AIzaSyC3n7zi8nErv5NM4mPKFS2C9KiOiuwl6hs
+google_api_key: 
 mapid: mapbox.satellite
 
 
 mapping:
-provider: google_static
+    provider: openstreetmap
+    api_key: AIzaSyC3n7zi8nErv5NM4mPKFS2C9KiOiuwl6hs
+    zoom: 10
+    dimensions:
+        width: 600
+        height: 400
 
 #  - icon:	google-plus
 #    url:	https://google.com/???
