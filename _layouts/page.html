@@ -40,13 +40,19 @@
         <section class="post-content">
           <a name="topofpage"></a>
           {{content}} 
-       
+       {% if page.location %}
+<div class="mapping">
+  <div class="map-canvas" id="map-event"></div>
+  <div class="map-point" address="{{ page.location.address }}" latitude="{{ page.location.latitude }}" longitude="{{ page.location.longitude }}">
+    <div><b>{{ page.title }}</b></div>
+    <div>{{ page.location.address }}</div>
+  </div>
+</div>
+            {% endif %}
         </section>
       </article>
     </main>
       <div>
-       {% include jekyll_mapping.html %}
-         {% render_map %}
           
     </div>
     <div class="bottom-closer">

@@ -2,9 +2,11 @@
 layout: page
 title: About
 permalink: /about/
-mapping:
-latitude: 51.101
-longitude: 0.1
+layout: event
+location:
+address: 218 W 15th St, NY, NY
+latitude: 40.7396183
+longitude: -74.00017439999999
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
