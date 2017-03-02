@@ -2,11 +2,8 @@
 layout: page
 title: About
 permalink: /about/
-layout: event
-location:
-address: 218 W 15th St, NY, NY
-latitude: 40.7396183
-longitude: -74.00017439999999
+coordinates: -73.7236504,43.2294791
+locations: Moreau Lake State Park
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
