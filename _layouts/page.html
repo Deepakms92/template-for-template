@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-    <script type="text/javascript" src="{{ "/assets/js/map.js" | prepend: site.baseurl  }}"></script>
   <body itemscope itemtype="http://schema.org/Article">
     {% include header.html %}
     <main class="content" role="main">
@@ -40,25 +39,12 @@
         {% endif %}
         <section class="post-content">
           <a name="topofpage"></a>
-          {{content}} 
-       {% if page.location %}
-<div class="mapping">
-  <div class="map-canvas" id="map-event"></div>
-  <div class="map-point" address="{{ page.location.address }}" latitude="{{ page.location.latitude }}" longitude="{{ page.location.longitude }}">
-   
-    <div>{{ page.location.address }}</div>
-  </div>
-</div>{% endif %}
+          {{content}}
+            <div>{{page.coordinates}}</div>
+            
         </section>
       </article>
     </main>
-<<<<<<< HEAD
-      <div>
-          
-    </div>
-=======
-      
->>>>>>> origin/gh-pages
     <div class="bottom-closer">
       <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
         Image
@@ -70,6 +56,5 @@
       </div>
     </div>
     {% include javascripts.html %}
-   
   </body>
 </html>
