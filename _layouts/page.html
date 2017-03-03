@@ -6,6 +6,18 @@
   
   <body  onload="loadMap()" itemscope itemtype="http://schema.org/Article" >
     {% include header.html %}
+      <div class="container1" id = "googleMap" style = "width:580px; height:400px; margin-left:auto; margin-right:auto;" ></div>
+    <div class="bottom-closer">
+      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">{{ site.title }}</h1>
+        <h2 class="blog-description">{{ site.description }}</h2>
+        <a href={{ "/" | prepend: site.baseurl }} class="btn">Back to Overview</a>
+      </div>
+    </div>
+    {% include javascripts.html %}
     <main class="content" role="main">
       <article class="post">
         {% if page.image %}
@@ -49,17 +61,6 @@
       </article>
     </main>
        
-     <div class="container1" id = "googleMap" style = "width:580px; height:400px; margin-left:auto; margin-right:auto;" ></div>
-    <div class="bottom-closer">
-      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
-        Image
-      </div>
-      <div class="inner">
-        <h1 class="blog-title">{{ site.title }}</h1>
-        <h2 class="blog-description">{{ site.description }}</h2>
-        <a href={{ "/" | prepend: site.baseurl }} class="btn">Back to Overview</a>
-      </div>
-    </div>
-    {% include javascripts.html %}
+     
   </body>
 </html>
