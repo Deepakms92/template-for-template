@@ -1,8 +1,31 @@
-{% if page.location %}
-<div class="mapping">
-  <div class="map-canvas" id="map-event"></div>
-  <div class="map-point" address="{{ page.location.address }}" latitude="{{ page.location.latitude }}" longitude="{{ page.location.longitude }}">
-    
-    <div>{{ page.location.address }}</div>
-  </div>
-</div>{% endif %}
+
+<script src = "https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+         var myCenter = new google.maps.LatLng(12.819271, 74.87847020000004);
+         function loadMap(){
+			
+            var mapProp = {
+               center: myCenter,
+               zoom:5,
+               mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            
+            var marker = new google.maps.Marker({
+               position: myCenter,
+               title:'Click to zoom'
+            });
+            
+            marker.setMap(map);
+            
+            //Zoom to 7 when clicked on marker
+            google.maps.event.addListener(marker,'click',function() {
+               map.setZoom(20);
+               map.setCenter(marker.getPosition());
+            });
+
+         }
+      </script>
+
