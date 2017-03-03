@@ -3,8 +3,11 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-    <div class="container1" id = "googleMap" style = "width:580px; height:400px; margin-left:auto; margin-right:auto;" ></div>
-    <div class="bottom-closer">
+  
+  <body  onload="loadMap()" itemscope itemtype="http://schema.org/Article" >
+    {% include header.html %}
+      
+      <div class="bottom-closer">
       <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
         Image
       </div>
@@ -14,11 +17,8 @@
         <a href={{ "/" | prepend: site.baseurl }} class="btn">Back to Overview</a>
       </div>
     </div>
-  
-  <body  onload="loadMap()" itemscope itemtype="http://schema.org/Article" >
-    {% include header.html %}
-      
     {% include javascripts.html %}
+      
     <main class="content" role="main">
       <article class="post">
         {% if page.image %}
@@ -62,6 +62,7 @@
       </article>
     </main>
        
-     
+     <div class="container1" id = "googleMap" style = "width:580px; height:400px; margin-left:auto; margin-right:auto;" ></div>
+    
   </body>
 </html>
