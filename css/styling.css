@@ -2,3 +2,10 @@ a.blog-logo{
     -webkit-transform: rotate(-90deg);
 }
 
+div.container1{
+
+width: 800px;
+color: #FFF;
+margin: 0 auto;
+
+}

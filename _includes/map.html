@@ -1,28 +1,31 @@
 
+<script src = "https://maps.google.com/maps/api/js?sensor=false"></script>
 
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-       
-        #map_canvas {width: 800px;
-color: #FFF;
-margin: 0 auto;}
-    </style>
-    <script type="text/javascript">
-        function initialize() {
-            var latlng = new google.maps.LatLng(-34.397, 150.644);
-            var myOptions = {
-                zoom: 8,
-                center: latlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
+<script>
+         var myCenter = new google.maps.LatLng(12.819271, 74.87847020000004);
+         function loadMap(){
+			
+            var mapProp = {
+               center: myCenter,
+               zoom:5,
+               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var map = new google.maps.Map(document.getElementById("map_canvas"),
-        myOptions);
-        }
-        var myKey = "AIzaSyC3n7zi8nErv5NM4mPKFS2C9KiOiuwl6hs";
-        function loadScript() {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = "https://maps.googleapis.com/maps/api/js?key=" + myKey + "&sensor=false&callback=initialize";
-            document.body.appendChild(script);
-        }
-    </script>
+            
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            
+            var marker = new google.maps.Marker({
+               position: myCenter,
+               title:'Click to zoom'
+            });
+            
+            marker.setMap(map);
+            
+            //Zoom to 7 when clicked on marker
+            google.maps.event.addListener(marker,'click',function() {
+               map.setZoom(20);
+               map.setCenter(marker.getPosition());
+            });
+
+         }
+      </script>
+

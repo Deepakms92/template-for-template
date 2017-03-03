@@ -4,7 +4,7 @@
 <html>
   {% include head.html %}
   
-  <body  onload="loadScript()" itemscope itemtype="http://schema.org/Article" >
+  <body  onload="loadMap()" itemscope itemtype="http://schema.org/Article" >
     {% include header.html %}
     <main class="content" role="main">
       <article class="post">
@@ -49,7 +49,7 @@
       </article>
     </main>
        
-     <div id="map_canvas" style="width: 100%; height: 100%">
+     <div class="container1" id = "googleMap" style = "width:580px; height:400px;"></div>
     <div class="bottom-closer">
       <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
         Image
