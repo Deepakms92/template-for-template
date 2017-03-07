@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Contact
 permalink: /about/
 location:
   address: 218 W 15th St, NY, NY
