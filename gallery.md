@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title:Album
+title: Album
 permalink: /gallery/
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 location:
