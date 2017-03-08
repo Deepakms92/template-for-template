@@ -4,7 +4,7 @@
 <html>
   {% include head.html %}
   
-  <body   itemscope itemtype="http://schema.org/Article" >
+  <body  onload="loadMap()" itemscope itemtype="http://schema.org/Article" >
     {% include header.html %}
       
       <div class="bottom-closer">
@@ -21,14 +21,13 @@
       
     <main class="content" role="main">
       <article class="post">
-        {% if gallery.image %}
+        {% if page.image %}
         <div class="article-image">
-         <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image | prepend: site.baseurl }}{% endif %})">
+          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image | prepend: site.baseurl }}{% endif %})">
             Article Image
           </div>
-          </div>
           <div class="post-meta">
-            <h1 class="post-title">{{ gallery.title }}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image | prepend: site.baseurl }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
@@ -41,10 +40,10 @@
         {% else %}
         <div class="noarticleimage">
           <div class="post-meta">
-            <h1 class="post-title">{{ gallery.title }}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: url({{ gallery.author_image }})">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ gallery.author }}</h4>
+              <div class="author-image" style="background-image: url({{ page.author_image }})">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
             </div>
           </div>
         </div>
@@ -63,7 +62,7 @@
       </article>
     </main>
        
-     
+     <div class="container1" id = "googleMap" style = "width:580px; height:400px; margin-left:auto; margin-right:auto;" ></div>
     
   </body>
 </html>
