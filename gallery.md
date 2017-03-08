@@ -2,7 +2,7 @@
 layout: gallery
 title: Album
 permalink: /gallery/
-image: /assets/images/murthy.JPG
+image: murthy1.JPG
 
 ---
 
