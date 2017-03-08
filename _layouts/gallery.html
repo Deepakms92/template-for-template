@@ -4,7 +4,7 @@
 <html>
   {% include head.html %}
   
-  <body  onload="loadMap()" itemscope itemtype="http://schema.org/Article" >
+  <body   itemscope itemtype="http://schema.org/Article" >
     {% include header.html %}
       
       <div class="bottom-closer">
@@ -23,7 +23,7 @@
       <article class="post">
         {% if page.image %}
         <div class="article-image">
-          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image | prepend: site.baseurl }}{% endif %})">
+          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
             Article Image
           </div>
           <div class="post-meta">
@@ -62,7 +62,6 @@
       </article>
     </main>
        
-     <div class="container1" id = "googleMap" style = "width:580px; height:400px; margin-left:auto; margin-right:auto;" ></div>
     
   </body>
 </html>
