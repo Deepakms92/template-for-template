@@ -2,11 +2,8 @@
 layout: gallery
 title: Album
 permalink: /gallery/
-image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
-location:
-  address: 218 W 15th St, NY, NY
-  latitude: 40.7396183
-  longitude: -74.00017439999999
+image: /assets/images/murthy.JPG
+
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
