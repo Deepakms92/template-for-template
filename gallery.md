@@ -8,6 +8,7 @@ images:
     description :Its an eatable.
   - image_path: /assets/images/murthy4.jpg
     title: PineApple Pie
+    description :Its an eatable.
 
 
 ---
