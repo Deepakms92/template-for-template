@@ -36,7 +36,8 @@
         <br>
 
          {% for image in page.images %}
-    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+    <img src="{{ image.image_path }}" alt="{{ image.title }}"/>
+          <p>{{ image.description }}</p>
         {% endfor %}
 
      

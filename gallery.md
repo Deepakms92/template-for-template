@@ -5,6 +5,7 @@ permalink: /gallery/
 images:
   - image_path: /assets/images/murthy4.jpg
     title: Apple Pie
+    description :Its an eatable.
   - image_path: /assets/images/murthy4.jpg
     title: PineApple Pie
 
