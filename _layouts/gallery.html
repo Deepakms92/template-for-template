@@ -34,19 +34,14 @@
         <br>
         <br>
         <br>
-<<<<<<< HEAD
-          {% for page in page.posts %}
+
+          {% for page in site.posts %}
        <img src="{{ site.baseurl }}/assets/images/{{ page.image }}" >
       
          {{ page.excerpt }}
           {% endfor %}
-=======
-       <img src="{{ site.baseurl }}/assets/images/{{ page.image }}" >
-      
 
-
-      {{ post.excerpt }}
->>>>>>> origin/gh-pages
+     
         <section class="post-content">
           <a name="topofpage"></a>
           {{content}}
