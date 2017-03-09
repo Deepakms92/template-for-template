@@ -35,11 +35,9 @@
         <br>
         <br>
 
-          {% for page in page.image %}
-       <img src="{{ site.baseurl }}/assets/images/{{ page.image }}" >
-      
-         {{ page.excerpt }}
-          {% endfor %}
+         {% for image in page.images %}
+    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+        {% endfor %}
 
      
         <section class="post-content">

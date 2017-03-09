@@ -2,9 +2,11 @@
 layout: gallery
 title: Album
 permalink: /gallery/
-image: murthy4.jpg
-
-image: murthy4.jpg
+images:
+  - image_path: /assets/images/murthy4.jpg
+    title: Apple Pie
+  - image_path: /assets/images/murthy4.jpg
+    title: PineApple Pie
 
 
 ---
