@@ -1,11 +1,10 @@
 ---
-layout: page
-title: Contact
-permalink: /about/
-location:
-  address: 218 W 15th St, NY, NY
-  latitude: 40.7396183
-  longitude: -74.00017439999999
+layout: gallery
+title: Album
+permalink: /gallery/
+image: murthy4.jpg
+image: murthy4.jpg
+
 ---
 
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
