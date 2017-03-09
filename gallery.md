@@ -3,7 +3,10 @@ layout: gallery
 title: Album
 permalink: /gallery/
 image: murthy4.jpg
+<<<<<<< HEAD
 image: murthy4.jpg
+=======
+>>>>>>> origin/gh-pages
 
 ---
 
