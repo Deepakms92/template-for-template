@@ -36,15 +36,20 @@
         <br>
 
          {% if page.carousel %}
-             <div class="flexslider">
-            <ul class="slides">
+             <div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
            {% for slides in page.carousel %}
-              <li>
+      <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+          
+             
           <img src="{{ site.baseurl }}/{{ slides.image }}">
-           </li>
+           
             {% endfor %}
-           </ul>
-          </div>
+           
+         
            {% endif %}
 
      
