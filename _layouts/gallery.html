@@ -35,10 +35,17 @@
         <br>
         <br>
 
-         {% for image in page.images %}
-    <img src="{{ site.baseurl }}/{{ image.image_path }}" alt="{{ image.title }}"/>
-        
-        {% endfor %}
+         {% if page.carousel %}
+             <div class="flexslider">
+            <ul class="slides">
+           {% for slides in page.carousel %}
+              <li>
+          <img src="{{ slides.image }}">
+           </li>
+            {% endfor %}
+           </ul>
+          </div>
+           {% endif %}
 
      
         <section class="post-content">

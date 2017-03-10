@@ -2,12 +2,9 @@
 layout: gallery
 title: Album
 permalink: /gallery/
-images:
-  - image_path: /assets/images/murthy4.jpg
-    title: Apple Pie
-    
-  - image_path: /assets/images/murthy4.jpg
-    title: PineApple Pie
+carousel:
+  - image: /assets/images/murthy4.jpg
+  - image: /assets/images/murthy4.jpg
     
 
 
