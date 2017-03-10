@@ -1,4 +1,9 @@
-$(window).load(function() {
+
+
+<script>
+    
+    
+    $(window).load(function() {
     $('.flexslider').flexslider({
     animation: "slide",
     controlNav: false,
@@ -8,3 +13,4 @@ $(window).load(function() {
     touch: true
     });
 });
+</script>
