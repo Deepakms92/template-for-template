@@ -40,7 +40,7 @@
             <ul class="slides">
            {% for slides in page.carousel %}
               <li>
-          <img src="{{ slides.image }}">
+          <img src="{{ site.baseurl }}/{{ slides.image }}">
            </li>
             {% endfor %}
            </ul>
