@@ -1,0 +1,19 @@
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/min/jquery.flexslider-min.js" | prepend: site.baseurl  }}"></script>
+
+
+
+<script>
+    
+    
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    directionNav: true,
+    slideshowSpeed: 5000,
+    animationSpeed: 600,
+    touch: true
+    });
+});
+</script>
