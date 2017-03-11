@@ -7,6 +7,18 @@ div.container1{
 margin: 0 auto 0 auto;
 
 }
+
+body{
+    
+  
+    background: url("background2.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+    
+    
+      }
 /*img.thumbnail:hover {
     position:relative;
     top:-25px;
