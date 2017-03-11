@@ -53,12 +53,12 @@
         <div class="carousel-inner">
             {% for img in page.carousel.first %}
                 <div class="item active">
-                    <img src="{{ "/assets/images/" | prepend: site.baseurl }}{{ img }}" alt="">
+                    <img src="{{ site.baseurl }}/{{ img.image }}" >
                 </div>
             {% endfor %}
             {% for img in page.carousel offset:1 %}
                 <div class="item">
-                    <img src="{{ "/assets/images/" | prepend: site.baseurl }}{{ img }}" alt="">
+                    <img src="{{ site.baseurl }}/{{ img.image }}" >
                 </div>
             {% endfor %}
         </div>
