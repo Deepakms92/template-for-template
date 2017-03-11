@@ -7,3 +7,12 @@ div.container1{
 margin: 0 auto 0 auto;
 
 }
+img.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
