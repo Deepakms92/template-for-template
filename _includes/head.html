@@ -43,10 +43,11 @@
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3n7zi8nErv5NM4mPKFS2C9KiOiuwl6hs&callback=initMap"></script>
     
 
+   {% if page.images %}
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   {% if page.images %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
 <script src="{{ site.baseurl }}/assets/js/jquery.magnific-popup.js"></script>
