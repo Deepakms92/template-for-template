@@ -3,8 +3,8 @@ layout: gallery
 title: Album
 permalink: /gallery/
 carousel:
-  - image: murthy4.jpg
-  - image: murthy4.jpg
+  - image: assets/images/murthy4.jpg
+  - image: assets/images/murthy4.jpg
     
 
 
