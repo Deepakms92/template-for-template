@@ -64,9 +64,31 @@
 <script src="{{ site.baseurl }}/js/assets/scripts.js"></script>
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/assets/modernizr.js"></script>
+    
+      <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
   {% endif %}
 
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
+  <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/galleries.css"  | prepend: site.baseurl  }}" />
+  <link rel="stylesheet" type="text/css" media="styling" href="{{ "/css/magnificpopup.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/print.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" media="styling" href="{{ "/css/styling.css"  | prepend: site.baseurl  }}" />
      {% include map.html %}
