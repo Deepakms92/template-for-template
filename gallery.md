@@ -5,7 +5,17 @@ permalink: /gallery/
 carousel:
   - image: assets/images/murthy4.jpg
   - image: assets/images/author.jpg
-    
+images:
+ - image_path: assets/images/murthy4.jpg
+   caption: IMAGE TITLE
+   mfp-title: IMAGE TITLE
+   copyright: © photorama
+ - image_path: assets/images/murthy4.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama
+ - image_path: assets/images/murthy4.jpg
+   caption: IMAGE TITLE
+   copyright: © photorama   
 
 
 ---
