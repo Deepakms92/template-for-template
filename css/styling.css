@@ -16,17 +16,17 @@ margin: 0 auto 0 auto;
     display:block;
     z-index:999;
 }*/
-.thumbnail {
+div.thumbnail {
     width: 320px;
     height: 240px;
 }
 
-.image {
+div.image {
     width: 100%;
     height: 100%;    
 }
 
-.image img {
+div.image img {
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* IE 9 */
@@ -34,7 +34,7 @@ margin: 0 auto 0 auto;
     transition: all 1s ease;
 }
 
-.image:hover img {
+div.image:hover img {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
