@@ -10,14 +10,9 @@ margin: 0 auto 0 auto;
 
 }
 
-body.this{
-   
-     background: url('{{site.baseurl}}/assets/images/background.jpg');
-   
-  
-    
-    
-      }
+body {
+background: url(../assets/images/background.JPG) no-repeat bottom center;
+}
 /*img.thumbnail:hover {
     position:relative;
     top:-25px;

@@ -20,6 +20,8 @@ name: 'Dirk Fabisch'
 author: 'Dirk Fabisch'
 author_image: "/assets/images/author.jpg"
 
+
+
 paginate:	5
 
 url: "http://visnumurthyvmtemple.com" # the base hostname & protocol for your site
