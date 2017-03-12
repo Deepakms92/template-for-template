@@ -20,6 +20,8 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
+    background: url("{{site.basurl}}/assets/images/background.jpg")
+    
 }
 
 
