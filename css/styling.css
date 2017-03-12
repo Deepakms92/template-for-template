@@ -12,10 +12,8 @@ margin: 0 auto 0 auto;
 
 body.this{
     
-     background: url("{{site.basurl}}/assets/images/background.jpg")
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-size:cover;
+    
+   
   
     
     
